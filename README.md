@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+# Comanda.ON
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao projeto Comanda ON! Este é um aplicativo web desenvolvido em ReactJS com Vite e TypeScript, projetado para gerenciar as operações de uma pizzaria. O projeto inclui telas de login, cadastro, dashboard, pedidos e cardapio, proporcionando uma experiência completa para os usuários.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Certifique-se de ter o Node.js instalado em sua máquina antes de prosseguir.
 
-## Expanding the ESLint configuration
+- Node.js: [https://nodejs.org/](https://nodejs.org/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Configuração do Ambiente de Desenvolvimento
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone o repositório:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/GadiegoN/comanda-on.git
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navegue até o diretório do projeto:
+
+```bash
+cd comanda-on
+```
+
+3. Navegue até o diretório do projeto:
+
+```bash
+npm install
+```
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar os seguintes scripts:
+
+`npm run dev`
+
+Inicia o aplicativo no modo de desenvolvimento. Abra http://localhost:5173/ para visualizá-lo no navegador.
+
+A página será recarregada automaticamente se você fizer edições no código-fonte.
+
+`npm run build`
+
+Compila o aplicativo para produção na pasta dist. O código será otimizado para melhor desempenho.
+
+`npm run serve`
+
+Inicia um servidor local para servir os arquivos compilados da pasta `dist`. Isso é útil para testar a versão de produção do aplicativo.
+
+## Estrutura do Projeto
+
+A estrutura do projeto é organizada da seguinte forma:
+
+- src/: Contém o código-fonte do aplicativo.
+  - components/: Componentes reutilizáveis.
+  - pages/: Páginas do aplicativo.
+  - auth/: Páginas de autenticação.
+  - \_layouts/: Layouts das paginas principais.
+- public/: Arquivos públicos acessíveis diretamente.
+
+## Tecnologias Utilizadas
+
+- ReactJS: Biblioteca para construção de interfaces de usuário.
+- Vite: Build tool rápida para projetos JavaScript/TypeScript.
+- TypeScript: Superset tipado do JavaScript.
+- Tailwind: Uma estrutura CSS.
+- Outras dependências: Verifique o arquivo package.json para obter a lista completa.
