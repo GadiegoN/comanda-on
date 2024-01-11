@@ -3,7 +3,13 @@ import { Copy, GripVertical, Pencil, Trash } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { TableCell, TableRow } from '@/components/ui/table'
 
-export function MenuProduct() {
+interface ProductProps {
+  name: string
+  description: string
+  price: number
+}
+
+export function MenuProduct({ description, name, price }: ProductProps) {
   return (
     <TableRow>
       <TableCell className="w-[64px]">
@@ -20,11 +26,9 @@ export function MenuProduct() {
         />
       </TableCell>
       <TableCell>
-        <h4 className="text-xl font-medium">Calabresa</h4>
-        <p className="text-muted-foreground">
-          Molho de tomate. mussarela, cebola, calabresa, catupiry
-        </p>
-        <span className="text-xl font-bold text-primary">R$ 58,80</span>
+        <h4 className="text-xl font-medium">{name}</h4>
+        <p className="text-muted-foreground">{description}</p>
+        <span className="text-xl font-bold text-primary">{price}</span>
       </TableCell>
       <TableCell className="w-[140px]">
         <div className="flex gap-4">

@@ -6,6 +6,7 @@ import { NotFound } from './pages/404'
 import { Dashboard } from './pages/app/dashboard/dashboard'
 import { Menu } from './pages/app/menu/menu'
 import { Orders } from './pages/app/orders/orders'
+import { Profile } from './pages/app/profile/profile'
 import { SignIn } from './pages/auth/sign-in'
 import { SignUp } from './pages/auth/sign-up'
 
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: '/', element: <Dashboard /> },
       { path: '/orders', element: <Orders /> },
       { path: '/menu', element: <Menu /> },
+      { path: '/profile', element: <Profile /> },
     ],
   },
   {

@@ -1,4 +1,5 @@
 import { Building, ChevronDown, LogOut } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import { Button } from './ui/button'
 import {
@@ -30,9 +31,11 @@ export function AccountMenu() {
           </span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <Building className="mr-2 h-4 w-4" />
-          <span>Perfil da loja</span>
+        <DropdownMenuItem asChild>
+          <Link to="/profile">
+            <Building className="mr-2 h-4 w-4" />
+            <span>Perfil da loja</span>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem className="text-rose-500 dark:text-rose-400">
           <LogOut className="mr-2 h-4 w-4" />
